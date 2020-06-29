@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+
+.Categories {
+    height: 100vh;
+    width: 100vw;
+    font-family: "El Messiri", sans-serif;
+}
+
+.categoryContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category {
+    position: relative;
+    margin: 0 5rem;
+}
+
+.category img {
+    z-index: -1px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    width: 23rem;
+    height: 31rem;
+    object-fit: cover;
+    border-radius: 25px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.category img:hover {
+    transition: 0.18s ease-in-out;
+    filter: brightness(88%);
+    transform: translateY(-0.25rem);
+}
+
+.category:hover .categoryText {
+    transition: 0.2s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+
+.categoryText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 2rem;
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media screen and (max-width: 1478px) {
+    .category img {
+        width: 18rem;
+        height: 27rem;
+    }
+}
+
+@media screen and (max-width: 1225px) {
+    .category img {
+        width: 14rem;
+        height: 23rem;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .category {
+        margin: 0 2rem;
+    }
+
+    .category img {
+        width: 14rem;
+        height: 19rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .Categories {
+        height: unset;
+    }
+
+    .categoryContainer {
+        flex-direction: column;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .category {
+        width: 100vw;
+        flex: 1;
+        margin: 0;
+        text-align: center;
+    }
+
+    .category img {
+        margin: 0;
+        padding: 0;
+        border-radius: 5px;
+        box-shadow: none;
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .category img:hover {
+        transform: none;
+    }
+}

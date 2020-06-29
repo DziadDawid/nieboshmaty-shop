@@ -1,0 +1,10 @@
+export { default as Koszyk } from "./Koszyk/Koszyk";
+export { default as LandingPage } from "./LandingPage/LandingPage";
+export { default as Categories } from "./Categories/Categories";
+export { default as SendMessage } from "./SendMessage/SendMessage";
+export { default as Torebeczki } from "./Torebeczki/Torebeczki";
+export { default as Torebeczka } from "./Torebeczka/Torebeczka";
+export { default as Koszuleczki } from "./Koszuleczki/Koszuleczki";
+export { default as Koszuleczka } from "./Koszuleczka/Koszuleczka";
+export { default as Inne } from "./Inne/Inne";
+export { default as SingleInne } from "./SingleInne/SingleInne";

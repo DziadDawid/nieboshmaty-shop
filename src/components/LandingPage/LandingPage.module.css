@@ -1,0 +1,24 @@
+.LandingPage {
+    height: 100vh;
+}
+
+.backgroundVideoContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#backgroundVideo {
+    width: 50rem;
+    border-radius: 25px;
+    border: 5px solid #f9c2fc;
+}
+
+@media screen and (max-width: 900px) {
+    .LandingPage {
+        display: none;
+    }
+}

@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+
+.ProductList {
+    width: 100vw;
+    font-family: "El Messiri", sans-serif;
+}
+
+.productListContainer {
+    margin: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.product {
+    position: relative;
+    text-align: center;
+}
+
+.product img {
+    margin: 1rem 1rem;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    width: 14rem;
+    height: 23rem;
+    transition: 0.2s ease-in-out;
+    object-fit: cover;
+}
+
+.product img:hover {
+    transition: 0.18s ease-in-out;
+    filter: brightness(88%);
+    transform: translateY(-0.25rem);
+}
+
+.product:hover .categoryText {
+    transition: 0.2s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+
+.categoryText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 2rem;
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .productListContainer {
+        margin: 2rem 0.5rem;
+    }
+}

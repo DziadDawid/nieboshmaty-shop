@@ -1,0 +1,62 @@
+.ShoppingCart {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+.product img {
+    left: 0;
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+}
+
+.title {
+    margin: 0 4rem;
+}
+
+.price {
+    margin: 0 2rem;
+}
+
+.totalContainer {
+    position: relative;
+    width: 60%;
+    display: flex;
+}
+
+.total {
+    position: absolute;
+    right: 0;
+    font-size: 24px;
+}
+
+.totalContainer button {
+    position: absolute;
+    right: 10rem;
+    border: none;
+    background-color: #bdf0ee;
+    padding: 0.5rem 2rem;
+    color: #f9c2fc;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.totalContainer button:hover {
+    transition: 0.2s ease-in-out;
+    background-color: #93ece9;
+}

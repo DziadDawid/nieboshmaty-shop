@@ -1,0 +1,31 @@
+.App {
+    height: 100vh;
+    width: 100vw;
+}
+
+.instagram-icon {
+    z-index: 999;
+    position: fixed;
+    width: 3rem;
+    margin: 1rem 2rem;
+    transition: 0.1s ease-in-out;
+}
+
+.instagram-icon:hover {
+    transition: 0.1s ease-in-out;
+    filter: brightness(95%);
+}
+
+.shopping_cart-icon {
+    z-index: 999;
+    position: fixed;
+    right: 0;
+    width: 3rem;
+    margin: 1rem 2rem;
+    transition: 0.1s ease-in-out;
+}
+
+.shopping_cart-icon:hover {
+    transition: 0.1s ease-in-out;
+    filter: brightness(95%);
+}
